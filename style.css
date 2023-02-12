@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -13,56 +14,65 @@ body {
     width: 100%;
     height: 100vh;
     background: url("img/akin-cakiner-nkUFXi0JSX8-unsplash.jpg") fixed;
-    background-color: #0c2323;
+    background-color: #061a1a;
     background-size: cover;
     background-position: center;
-    opacity: 0.7;
+    opacity: 0.8;
 
 }
-#header{
+
+#header {
     padding-top: 2%;
 }
-.container{
+
+.container {
     padding: 10px 10%;
 }
+
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 nav strong span {
     color: #05a3a3;
 }
 
-.nav-txt{
+.nav-txt {
     font-size: 230%;
     font-weight: 650;
-    color: rgb(255, 253, 253);;
+    color: rgb(255, 253, 253);
+    ;
 }
-.nav-txt:hover{
+
+.nav-txt:hover {
     transform: scale(1.3);
     transition: 0.5s;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
-nav ul li a{
-   color:#fffbfb;
-   text-decoration: none;
-   font-size: 17px;
-   font-weight: 500;
-   position: relative;
+
+nav ul li a {
+    color: #fffbfb;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    position: relative;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     color: #05a3a3;
     transition: 0.5s;
 }
 
-nav ul li a::after{ 
-    content: ''; 
+nav ul li a::after {
+    content: '';
     width: 0;
     height: 3px;
     color: #05a3a3;
@@ -71,49 +81,57 @@ nav ul li a::after{
     left: 0;
     bottom: -6px;
 }
-nav ul li a:hover::after{
+
+nav ul li a:hover::after {
     color: #05a3a3;
     width: 100%;
     transition: 0.5s;
 }
 
 /*about me*/
-#about{
+#about {
     padding: 80px 0px;
     color: #ffffff;
 }
-.row{
+
+.row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
 }
-.about-col1{
+
+.about-col1 {
     flex-basis: 30%;
 }
 
 /* -----about me image----- */
-.about-col1 img{
-    width: 100%;
-    border: 10px solid #ffffff;
-  /*  border-bottom: 1px solid #fff;
+.about-col1 img {
+    border: 7px solid #ffffff;
+    /*  border-bottom: 1px solid #fff;
     border-right: 1px solid #fff; */
     border-radius: 100%;
+    width: 100%;
     height: 300px;
+    display: block;
+    object-fit: fill;
 }
+
 .about-col2 {
     flex-basis: 60%;
 }
-.abouthead{
+
+.abouthead {
     text-align: center;
 }
-.about-col2 p{
+
+.about-col2 p {
     font-size: 16 px;
     text-align: justify;
 }
 
-.Sub-heading{
+.Sub-heading {
     font-size: 40px;
     padding-bottom: 10px;
     font-weight: 700;
@@ -121,74 +139,92 @@ nav ul li a:hover::after{
 }
 
 /* -----------services---------- */
-#services{
+#services {
     padding: 30px 0px;
 }
 
-.services-list{
+.services-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
-.services-list div{
-    background: #262626;
-    padding: 40px;
-    font-size: 13px;
+
+.services-list div {
+    background: #ffffff00;
+    padding: 35px;
+    font-size: 12px;
     font-weight: 300;
-    border-radius: 10px;
-    
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
 }
-.services-list div i{
+
+.services-list div i {
     font-size: 50px;
     margin-bottom: 30px;
 }
-.services-list div h2{
+
+.services-list div h2 {
     font-size: 30px;
     font-weight: 500;
-    margin-bottom: 15px;   
+    margin-bottom: 15px;
 }
-.services-list div p{
+
+.services-list div p {
     font-size: 14px;
 }
-.services-list div a{
+
+.services-list div a {
+    text-transform: capitalize;
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 13px;
+    color: rgb(0, 255, 221);
+    font-size: 16px;
     margin-top: 20px;
     display: inline-block;
 }
-.services-list div:hover{
- background: #05a3a3;
- transform: translateY(-10px);
- transition: 0.5s;
+
+.services-list div:hover {
+    background: #037070;
+    transform: translateY(-7px);
+    transition: 0.8s;
 }
 
 /* ---------portfolio---------- */
-#portfolio{
+#portfolio {
     padding: 50px 0;
 }
-.work-list{
+
+.work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
-    margin-top: 50px; 
+    margin-top: 50px;
 }
-.work{
+
+.work {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
-.work img{
+
+.work img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    display:block;
+    display: block;
 }
-.layer{
+
+.layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #05a3a3);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #05a3a3);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -202,46 +238,51 @@ nav ul li a:hover::after{
     text-align: center;
     font-size: 14px;
 }
+
 .layer h3 {
-    font-weight: 500;
+    font-weight: 900;
     margin-bottom: 20px;
 }
-.layer a{
+
+.layer a {
     margin-top: 20px;
-    color: #05a3a3;
+    color: #0d7880;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
-    background: #fff;
+    background: #ffffff;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     text-align: center;
 }
-.work:hover img{
+
+.work:hover img {
     transform: scale(1.1);
     transition: 0.5s;
 }
-.work:hover .layer{
+
+.work:hover .layer {
     height: 100%;
     transition: 0.5s;
 }
 
 /* --------button-------- */
-.btn{
+.btn {
     display: block;
-    margin: 50px auto;
+    margin: 40px auto;
     width: fit-content;
     text-decoration: none;
-    border: solid 1px #05a3a3;
-    padding: 14px 50px;
-    border-radius: 6px;
+    border: solid 2px #05a3a3;
+    padding: 15px 40px;
+    border-radius: 30px;
     color: #fff;
-    font-weight: 600;
+    font-weight: 800;
 }
-.btn:hover{
+
+.btn:hover {
     background: #05a3a3;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 
 /* --------contact------ */
@@ -249,22 +290,24 @@ nav ul li a:hover::after{
     text-align: center;
     margin-bottom: 20px;
 }
-#contact p{
-  margin-top: 10px;
+
+#contact p {
+    margin-top: 10px;
 }
-#contact p i{
+
+#contact p i {
     margin-right: 10px;
     font-size: 120%;
-    color:#05a3a3;
+    color: #05a3a3;
 }
 
 /* ---------footer--------- */
-.copyright{
+.copyright {
     text-align: center;
     width: 100%;
-    background: #262626;
+    background: #0524309d;
     padding: 10px 0;
     font-weight: 350;
     margin-top: 10px;
-
+    text-shadow: #05a3a3;
 }
