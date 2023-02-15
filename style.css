@@ -306,6 +306,23 @@ nav ul li a:hover::after {
     color: #05a3a3;
 }
 
+/* Social Buttton */
+.socialbtn {
+    text-align: center;
+    font-size: 35px;
+    -webkit-text-fill-color: #fff;
+}
+
+/* .fa-brands a:hover {
+    color: #05a3a3;
+    transition: 0.8s;
+} */
+
+.fa-brands:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
 /* ---------footer--------- */
 .copyright {
     text-align: center;
