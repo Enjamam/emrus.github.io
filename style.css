@@ -18,7 +18,7 @@ body {
     background-size: cover;
     background-position: center;
     opacity: 0.8;
-    background-image: linear-gradient(rgb(1, 18, 13), rgb(5, 31, 55), rgb(11, 1, 24), rgb(16, 1, 1), rgb(1, 19, 15));
+    background-image: linear-gradient(rgb(1, 18, 13), rgb(5, 31, 55), rgb(11, 1, 24), rgb(0, 20, 16), rgb(1, 1, 17));
     height: 100%;
 }
 
